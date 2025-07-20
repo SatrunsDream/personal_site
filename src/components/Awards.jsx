@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import certificateImage from '../assets/images/zero_to_hero_python.jpg';
 
 const Awards = () => {
   const [showCertificate, setShowCertificate] = useState(false);
@@ -8,7 +9,7 @@ const Awards = () => {
     organization: "Udemy",
     year: "2023",
     description: "Comprehensive Python programming course covering fundamentals to advanced concepts including OOP, game development, GUI creation, and professional Python applications.",
-    image: "/src/assets/images/zero_to_hero_python.jpg"
+    image: certificateImage
   };
 
   const toggleCertificate = () => {

@@ -1,11 +1,12 @@
 import React from 'react';
+import lebronImage from '../assets/images/lebron.jpg';
 
 const Hero = () => {
   return (
     <section className="hero">
       <div className="hero-content">
         <div className="hero-image">
-          <img src="/src/assets/images/lebron.jpg" alt="Sardor Sobirov" />
+          <img src={lebronImage} alt="Sardor Sobirov" />
         </div>
                   <div className="hero-text">
             <h1>Hi, I'm Sardor</h1>
@@ -15,7 +16,7 @@ const Hero = () => {
               <p>Currently in my 4th year at UCSD studying Data Science, I'm passionate about Bayesian statistics and bioinformatics. I'm particularly drawn to biological data and hope to pursue a master's degree in data science to further explore the intersection of statistics and life sciences.</p>
             </div>
             <a 
-              href="/src/data/Sardor_DS_Resume.pdf" 
+              href="/Sardor_DS_Resume.pdf" 
               download 
               className="download-button"
             >
