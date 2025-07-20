@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "./static/css/main.e4741ad6.css",
-    "main.js": "./static/js/main.d5bc038b.js",
-    "static/media/nas.png": "./static/media/nas.61b1c3d51f38f7035595.png",
-    "static/media/zero_to_hero_python.jpg": "./static/media/zero_to_hero_python.002ac8a0afc97f25005a.jpg",
-    "static/media/lebron.jpg": "./static/media/lebron.c65fc0f01b87f7532224.jpg",
-    "static/media/dcs.png": "./static/media/dcs.4c5665837b219190b6f8.png",
-    "static/media/poa.png": "./static/media/poa.69a7d06dd800dfcb32fa.png",
-    "static/media/hma.png": "./static/media/hma.f2a22fcdae109203a972.png",
-    "static/media/mlb.png": "./static/media/mlb.ac02444db84b31465589.png",
-    "static/media/ckd.png": "./static/media/ckd.1b96ce029c0f1c3c0f27.png",
-    "index.html": "./index.html",
-    "main.e4741ad6.css.map": "./static/css/main.e4741ad6.css.map",
-    "main.d5bc038b.js.map": "./static/js/main.d5bc038b.js.map"
+    "main.css": "/personal_site/static/css/main.e4741ad6.css",
+    "main.js": "/personal_site/static/js/main.9d986304.js",
+    "static/media/nas.png": "/personal_site/static/media/nas.61b1c3d51f38f7035595.png",
+    "static/media/zero_to_hero_python.jpg": "/personal_site/static/media/zero_to_hero_python.002ac8a0afc97f25005a.jpg",
+    "static/media/lebron.jpg": "/personal_site/static/media/lebron.c65fc0f01b87f7532224.jpg",
+    "static/media/dcs.png": "/personal_site/static/media/dcs.4c5665837b219190b6f8.png",
+    "static/media/poa.png": "/personal_site/static/media/poa.69a7d06dd800dfcb32fa.png",
+    "static/media/hma.png": "/personal_site/static/media/hma.f2a22fcdae109203a972.png",
+    "static/media/mlb.png": "/personal_site/static/media/mlb.ac02444db84b31465589.png",
+    "static/media/ckd.png": "/personal_site/static/media/ckd.1b96ce029c0f1c3c0f27.png",
+    "index.html": "/personal_site/index.html",
+    "main.e4741ad6.css.map": "/personal_site/static/css/main.e4741ad6.css.map",
+    "main.9d986304.js.map": "/personal_site/static/js/main.9d986304.js.map"
   },
   "entrypoints": [
     "static/css/main.e4741ad6.css",
-    "static/js/main.d5bc038b.js"
+    "static/js/main.9d986304.js"
   ]
 }
