@@ -1,0 +1,52 @@
+{
+  "projects": [
+    {
+      "title": "Chronic Kidney Disease Prediction",
+      "year": "2025",
+      "image": "/src/assets/images/ckd.png",
+      "description": "Developed a machine learning model to predict chronic kidney disease using patient health indicators. Achieved high accuracy through data preprocessing, feature selection, and model optimization.",
+      "link": "https://satrunsdream.github.io/Chronic-Kidney-Disease/",
+      "tags": ["Machine Learning", "Healthcare", "Classification", "Scikit-learn", "Data Preprocessing"]
+    },
+    {
+      "title": "MLB Data Analysis Dashboard",
+      "year": "2025",
+      "image": "/src/assets/images/mlb.png",
+      "description": "Built an interactive dashboard using D3.js and JavaScript to explore MLB player and team statistics. Visualizations include performance trends, comparisons across seasons, and predictive insights leveraging advanced metrics.",
+      "link": "https://d2osborn.github.io/dsc106-finalproject/",
+      "tags": ["Data Visualization", "D3.js", "Sports Analytics", "Interactive Dashboard", "MLB"]
+    },
+    {
+      "title": "House Evaluation",
+      "year": "2025",
+      "image": "/src/assets/images/hma.png",
+      "description": "Created a web application to evaluate house prices using data from over 2 million U.S. homes. Implemented regression models and geodemographic analysis for accurate price predictions.",
+      "link": "https://github.com/SatrunsDream/House-Evaluation",
+      "tags": ["Regression", "Housing Market", "Geospatial Analysis", "FastAPI", "Data Engineering"]
+    },
+    {
+      "title": "Comparative Glucose Response by Nutrient Focus and Health Group",
+      "year": "2025",
+      "image": "/src/assets/images/nas.png",
+      "description": "Developed an interactive D3.js dashboard to explore how different meal compositions (high-carb, high-protein, high-fat) affect blood glucose levels across health groups (Healthy, Pre-diabetic, Type 2 Diabetic).",
+      "link": "https://d2osborn.github.io/dsc106-project3/",
+      "tags": ["Data Visualization", "D3.js", "Interactive Design", "Health Data", "UX/UI"]
+    },
+    {
+      "title": "Drug Consumption Study",
+      "year": "2025",
+      "image": "/src/assets/images/dcs.png",
+      "description": "Investigated correlations between demographic factors and drug consumption patterns. Utilized machine learning classification techniques to identify key predictors of substance use.",
+      "link": "https://github.com/SatrunsDream/Drug-Consumption-Study",
+      "tags": ["Machine Learning", "Behavioral Data", "Classification", "Public Health", "EDA"]
+    },
+    {
+      "title": "Power Outages Analysis",
+      "year": "2024",
+      "image": "/src/assets/images/poa.png",
+      "description": "Analyzed major power outage events in the U.S. from 2000 to 2016. Conducted data cleaning, exploratory data analysis, and predictive modeling to understand outage patterns and their impacts.",
+      "link": "https://satrunsdream.github.io/Poweroutages-Analysis/",
+      "tags": ["Time Series", "Energy Sector", "Data Cleaning", "Predictive Modeling", "Exploratory Analysis"]
+    }
+  ]
+}
