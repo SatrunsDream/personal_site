@@ -5,15 +5,37 @@ const Experience = () => {
 
   const experiences = [
     {
-      title: "Student Intern - Innovating for National Security (i4NS)",
+      title: "Account Manager, Growth & Client Success",
+      company: "FMJ — eCommerce Optimization Platform ",
+      period: "June 2025 - Sep 2025",
+      location: "Oregon, OR",
+      bullets: [
+        "Owned onboarding and account health for 30+ DTC brands using FMJ’s subscription platform; scoped payment, funnel, retention setups and defined success metrics with stakeholders.",
+        "Ran product walkthroughs and synthesized feedback into requirements and enablement docs; partnered with growth to test new checkout/upsell flows and messaging, yielding a 15% increase in profit.",
+        "Collaborated on targeted Facebook ad experiments; contributed to funnels that improved acquisition efficiency and LTV via upsell/checkout optimization by approximately 35%."
+      ]
+    },
+    {
+      title: "Product Manager Intern - Innovating for National Security (i4NS)",
       company: "United States Department of Defense (DoD)",
       period: "Sep 2024 - Dec 2024",
       location: "La Jolla, CA",
       bullets: [
         "Contributed to the development of a Venture Capital (VC) Dashboard to assist the Department of Defense (DoD) in identifying mature and emerging service-related technologies within investor portfolios.",
-        "Applied the Lean LaunchPad methodology to help teams rapidly address complex challenges, iterate on solutions, and deliver customer-tailored minimum viable products.",
+        "Applied Lean LaunchPad to interview 50+ stakeholders, map pains, and define problem statements for dual-usetech discovery; converted insights into MVP scope and backlog.",
         "Fostered connections between military technology innovations and defense-focused venture capitalists, as well as entrepreneurs, to promote civilian-military technological advancements.",
         "Streamlined the transition of internal R&D projects into market-ready solutions, enhancing operational efficiency and innovation within the DoD."
+      ]
+    },
+    {
+      title: "Web Developer Consultant",
+      company: "Cornerstone Community Consultants (CCC)",
+      period: "March 2022 - Sep 2024",
+      location: "La Jolla, CA",
+      bullets: [
+        "Redesigned 5+ client sites with responsive React/Bootstrap components, improving mobile UX and navigation clarity; delivered intake forms and basic CRM integrations.",
+        "Translated Figma wireframes into production UI; standardized components and SCSS tokens for 20% faster iteration across non-profit and SMB clients.",
+        "Spearheaded the adoption of responsive design principles and Bootstrap framework, resulting in improvement in mobile responsiveness and user experience."
       ]
     },
     {
@@ -25,17 +47,6 @@ const Experience = () => {
         "Proficiently contributed to data collection, organization, and secure storage, prioritizing data security and implementing robust backups for data integrity assurance.",
         "Provided comprehensive support for essential biology research software applications, including proficiency in tools like PYRAT and various bioinformatics applications.",
         "Ensured optimal performance of lab computers and software through regular updates and maintenance, facilitating efficient data analysis and research tasks."
-      ]
-    },
-    {
-      title: "Web Developer Frontend",
-      company: "Cornerstone Community Consultants (CCC)",
-      period: "March 2022 - Sep 2024",
-      location: "La Jolla, CA",
-      bullets: [
-        "Revamped the user interface of the CCC Organization Site, introducing advanced SCSS styling and smooth transitions for a modern and visually appealing design.",
-        "Created and delivered websites for a broad clientele, encompassing local small businesses, startups, non-profit organizations, professional service providers, and real estate firms.",
-        "Spearheaded the adoption of responsive design principles and Bootstrap framework, resulting in improvement in mobile responsiveness and user experience."
       ]
     }
   ];
