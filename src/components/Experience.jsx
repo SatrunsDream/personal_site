@@ -8,7 +8,7 @@ const Experience = () => {
       title: "Account Manager, Growth & Client Success",
       company: "FMJ — eCommerce Optimization Platform ",
       period: "June 2025 - Sep 2025",
-      location: "Oregon, OR",
+      location: "Miami, FL",
       bullets: [
         "Owned onboarding and account health for 30+ DTC brands using FMJ’s subscription platform; scoped payment, funnel, retention setups and defined success metrics with stakeholders.",
         "Ran product walkthroughs and synthesized feedback into requirements and enablement docs; partnered with growth to test new checkout/upsell flows and messaging, yielding a 15% increase in profit.",
