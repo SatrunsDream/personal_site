@@ -54,9 +54,9 @@ const Navigation = () => {
           <a onClick={() => scrollToSection('contact')} className="nav-link">
             Contact
           </a>
-          <a onClick={() => scrollToSection('blog')} className="nav-link">
+          {/* <a onClick={() => scrollToSection('blog')} className="nav-link">
             Blog
-          </a>
+          </a> */}
           <button 
             onClick={toggleTheme} 
             className="theme-toggle"

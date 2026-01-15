@@ -9,7 +9,7 @@ body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
   line-height: 1.6;
   color: #333;
-  background-color: #fef7f7;
+  background-color: #eff6ff;
 }
 
 /* App container */
@@ -26,7 +26,7 @@ body {
   background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(10px);
   z-index: 1000;
-  box-shadow: 0 2px 20px rgba(236, 72, 153, 0.1);
+  box-shadow: 0 2px 20px rgba(59, 130, 246, 0.1);
 }
 
 .nav-container {
@@ -41,7 +41,7 @@ body {
 .nav-logo span {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #ec4899;
+  color: #3b82f6;
 }
 
 .nav-menu {
@@ -61,8 +61,8 @@ body {
 }
 
 .nav-link:hover {
-  color: #ec4899;
-  background: rgba(236, 72, 153, 0.1);
+  color: #3b82f6;
+  background: rgba(59, 130, 246, 0.1);
 }
 
 .theme-toggle {
@@ -80,8 +80,8 @@ body {
 }
 
 .theme-toggle:hover {
-  color: #ec4899;
-  background: rgba(236, 72, 153, 0.1);
+  color: #3b82f6;
+  background: rgba(59, 130, 246, 0.1);
 }
 
 .hamburger {
@@ -94,7 +94,7 @@ body {
 .hamburger span {
   width: 25px;
   height: 3px;
-  background: #ec4899;
+  background: #3b82f6;
   transition: all 0.3s ease;
 }
 
@@ -121,7 +121,7 @@ section h2 {
   font-size: 2.5rem;
   margin-bottom: 2rem;
   text-align: center;
-  color: #be185d;
+  color: #1e40af;
   position: relative;
 }
 
@@ -133,13 +133,13 @@ section h2::after {
   transform: translateX(-50%);
   width: 60px;
   height: 3px;
-  background: linear-gradient(to right, #ec4899, #be185d);
+  background: linear-gradient(to right, #3b82f6, #1e40af);
   border-radius: 2px;
 }
 
 /* Hero section */
 .hero {
-  background: linear-gradient(135deg, #ec4899 0%, #be185d 100%);
+  background: linear-gradient(135deg, #3b82f6 0%, #1e40af 100%);
   color: white;
   text-align: center;
   padding: 6rem 2rem 4rem;
@@ -230,7 +230,7 @@ section h2::after {
 }
 
 .cta-button {
-  background: #f472b6;
+  background: #60a5fa;
   color: white;
   padding: 1rem 2rem;
   border: none;
@@ -254,38 +254,42 @@ section h2::after {
 
 .cta-button.secondary:hover {
   background: white;
-  color: #ec4899;
+  color: #3b82f6;
 }
 
 /* Projects section */
 .projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  display: flex;
+  flex-direction: column;
   gap: 2rem;
   margin-top: 2rem;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .project-card {
   background: white;
+  padding: 2rem;
   border-radius: 12px;
-  overflow: hidden;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease;
 }
 
 .project-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 8px 25px rgba(236, 72, 153, 0.15);
+  box-shadow: 0 8px 25px rgba(59, 130, 246, 0.15);
 }
 
-.project-image img {
+/* Image functionality commented out for now */
+/* .project-image img {
   width: 100%;
   height: 200px;
   object-fit: cover;
-}
+} */
 
 .project-content {
-  padding: 1.5rem;
+  padding: 0;
 }
 
 .project-content h3 {
@@ -302,8 +306,8 @@ section h2::after {
 }
 
 .tech-tag {
-  background: #fce7f3;
-  color: #be185d;
+  background: #dbeafe;
+  color: #1e40af;
   padding: 0.25rem 0.75rem;
   border-radius: 20px;
   font-size: 0.875rem;
@@ -315,13 +319,21 @@ section h2::after {
   margin-top: 1rem;
 }
 
-.project-links a {
-  color: #ec4899;
+.project-links a,
+.project-link {
+  color: #3b82f6;
   text-decoration: none;
   font-weight: 500;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
 }
 
-.project-links a:hover {
+.project-links a:hover,
+.project-link:hover {
   text-decoration: underline;
 }
 
@@ -340,7 +352,7 @@ section h2::after {
   top: 0;
   bottom: 0;
   width: 2px;
-  background: linear-gradient(to bottom, #ec4899, #be185d);
+  background: linear-gradient(to bottom, #3b82f6, #1e40af);
   transform: translateX(-50%);
 }
 
@@ -370,10 +382,10 @@ section h2::after {
   top: 2rem;
   width: 20px;
   height: 20px;
-  background: #ec4899;
+  background: #3b82f6;
   border-radius: 50%;
   border: 4px solid white;
-  box-shadow: 0 2px 8px rgba(236, 72, 153, 0.3);
+  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.3);
 }
 
 .experience-item.left .timeline-dot {
@@ -386,7 +398,7 @@ section h2::after {
 
 .experience-item:hover {
   transform: translateY(-4px);
-  box-shadow: 0 8px 25px rgba(236, 72, 153, 0.15);
+  box-shadow: 0 8px 25px rgba(59, 130, 246, 0.15);
 }
 
 .experience-content {
@@ -421,7 +433,7 @@ section h2::after {
 }
 
 .company {
-  color: #ec4899;
+  color: #3b82f6;
   font-weight: 500;
 }
 
@@ -431,7 +443,7 @@ section h2::after {
 }
 
 .location {
-  color: #ec4899;
+  color: #3b82f6;
   font-size: 0.875rem;
   font-weight: 500;
 }
@@ -482,15 +494,15 @@ section h2::after {
   content: '•';
   position: absolute;
   left: 0;
-  color: #ec4899;
+  color: #3b82f6;
   font-weight: bold;
   font-size: 1.2rem;
 }
 
 .expand-button {
   background: none;
-  border: 2px solid #ec4899;
-  color: #ec4899;
+  border: 2px solid #3b82f6;
+  color: #3b82f6;
   padding: 0.5rem 1rem;
   border-radius: 25px;
   font-size: 0.875rem;
@@ -501,7 +513,7 @@ section h2::after {
 }
 
 .expand-button:hover {
-  background: #ec4899;
+  background: #3b82f6;
   color: white;
 }
 
@@ -531,7 +543,7 @@ section h2::after {
 }
 
 .organization {
-  color: #ec4899;
+  color: #3b82f6;
   font-weight: 500;
   display: block;
   margin-bottom: 0.25rem;
@@ -544,12 +556,12 @@ section h2::after {
 
 .award-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 8px 25px rgba(236, 72, 153, 0.15);
+  box-shadow: 0 8px 25px rgba(59, 130, 246, 0.15);
 }
 
 /* Certificate modal and button */
 .view-certificate-btn {
-  background: #ec4899;
+  background: #3b82f6;
   color: white;
   border: none;
   padding: 0.75rem 1.5rem;
@@ -562,7 +574,7 @@ section h2::after {
 }
 
 .view-certificate-btn:hover {
-  background: #be185d;
+  background: #1e40af;
   transform: translateY(-2px);
 }
 
@@ -578,6 +590,10 @@ section h2::after {
   justify-content: center;
   z-index: 2000;
   padding: 2rem;
+}
+
+.certificate-modal .pdf-content {
+  padding: 0;
 }
 
 .certificate-content {
@@ -618,6 +634,25 @@ section h2::after {
   background: rgba(0, 0, 0, 0.9);
 }
 
+/* PDF Modal Styles */
+.pdf-content {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  max-width: 100vw;
+  max-height: 100vh;
+  border-radius: 0;
+}
+
+.pdf-viewer {
+  width: 100%;
+  height: 100vh;
+  border: none;
+  flex: 1;
+}
+
+
 /* Contact section */
 .contact-content {
   display: grid;
@@ -640,17 +675,17 @@ section h2::after {
 }
 
 .social-links a {
-  color: #ec4899;
+  color: #3b82f6;
   text-decoration: none;
   font-weight: 500;
   padding: 0.5rem 1rem;
-  border: 2px solid #ec4899;
+  border: 2px solid #3b82f6;
   border-radius: 25px;
   transition: all 0.2s ease;
 }
 
 .social-links a:hover {
-  background: #ec4899;
+  background: #3b82f6;
   color: white;
 }
 
@@ -664,7 +699,7 @@ section h2::after {
 
 .contact-form:hover {
   transform: translateY(-4px);
-  box-shadow: 0 8px 25px rgba(236, 72, 153, 0.15);
+  box-shadow: 0 8px 25px rgba(59, 130, 246, 0.15);
 }
 
 .form-group {
@@ -883,8 +918,8 @@ section h2::after {
 }
 
 .dark-mode .nav-link:hover {
-  color: #ec4899;
-  background: rgba(236, 72, 153, 0.2);
+  color: #3b82f6;
+  background: rgba(59, 130, 246, 0.2);
 }
 
 .dark-mode .theme-toggle {
@@ -892,8 +927,8 @@ section h2::after {
 }
 
 .dark-mode .theme-toggle:hover {
-  color: #ec4899;
-  background: rgba(236, 72, 153, 0.2);
+  color: #3b82f6;
+  background: rgba(59, 130, 246, 0.2);
 }
 
 .dark-mode section {
@@ -901,7 +936,7 @@ section h2::after {
 }
 
 .dark-mode section h2 {
-  color: #ec4899;
+  color: #3b82f6;
 }
 
 /* Project cards dark mode */
@@ -915,14 +950,14 @@ section h2::after {
 
 .dark-mode .experience-item:hover,
 .dark-mode .award-card:hover {
-  box-shadow: 0 8px 25px rgba(236, 72, 153, 0.3);
+  box-shadow: 0 8px 25px rgba(59, 130, 246, 0.3);
 }
 
 .dark-mode .project-card:hover,
 .dark-mode .award-card:hover,
 .dark-mode .blog-card:hover,
 .dark-mode .contact-form:hover {
-  box-shadow: 0 8px 25px rgba(236, 72, 153, 0.3);
+  box-shadow: 0 8px 25px rgba(59, 130, 246, 0.3);
 }
 
 .dark-mode .project-content h3 {
@@ -938,12 +973,14 @@ section h2::after {
   color: #e5e5e5;
 }
 
-.dark-mode .project-links a {
-  color: #ec4899;
+.dark-mode .project-links a,
+.dark-mode .project-link {
+  color: #3b82f6;
 }
 
-.dark-mode .project-links a:hover {
-  color: #be185d;
+.dark-mode .project-links a:hover,
+.dark-mode .project-link:hover {
+  color: #1e40af;
 }
 
 /* Experience section dark mode */
@@ -973,7 +1010,7 @@ section h2::after {
 }
 
 .dark-mode .company {
-  color: #ec4899;
+  color: #3b82f6;
 }
 
 .dark-mode .period,
@@ -995,7 +1032,7 @@ section h2::after {
 }
 
 .dark-mode .expand-button:hover {
-  background: #ec4899;
+  background: #3b82f6;
   color: white;
 }
 
@@ -1005,7 +1042,7 @@ section h2::after {
 }
 
 .dark-mode .organization {
-  color: #ec4899;
+  color: #3b82f6;
 }
 
 .dark-mode .year {
@@ -1018,7 +1055,7 @@ section h2::after {
 }
 
 .dark-mode .view-certificate-btn:hover {
-  background: #ec4899;
+  background: #3b82f6;
   color: white;
 }
 
@@ -1032,11 +1069,11 @@ section h2::after {
 }
 
 .dark-mode .read-more {
-  color: #ec4899;
+  color: #3b82f6;
 }
 
 .dark-mode .read-more:hover {
-  color: #be185d;
+  color: #1e40af;
 }
 
 /* Contact form dark mode */
@@ -1049,8 +1086,8 @@ section h2::after {
 
 .dark-mode .contact-form input:focus,
 .dark-mode .contact-form textarea:focus {
-  border-color: #ec4899;
-  box-shadow: 0 0 0 2px rgba(236, 72, 153, 0.2);
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
 }
 
 .dark-mode .form-group label {
@@ -1058,11 +1095,11 @@ section h2::after {
 }
 
 .dark-mode .submit-btn {
-  background: linear-gradient(135deg, #ec4899, #be185d);
+  background: linear-gradient(135deg, #3b82f6, #1e40af);
 }
 
 .dark-mode .submit-btn:hover {
-  background: linear-gradient(135deg, #be185d, #ec4899);
+  background: linear-gradient(135deg, #1e40af, #3b82f6);
 }
 
 /* Contact info dark mode */
@@ -1071,11 +1108,11 @@ section h2::after {
 }
 
 .dark-mode .social-links a {
-  color: #ec4899;
+  color: #3b82f6;
 }
 
 .dark-mode .social-links a:hover {
-  color: #be185d;
+  color: #1e40af;
 }
 
 /* Mobile navigation dark mode */

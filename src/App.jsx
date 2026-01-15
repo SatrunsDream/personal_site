@@ -5,7 +5,7 @@ import Projects from './components/Projects';
 import Experience from './components/Experience';
 import Awards from './components/Awards';
 import Contact from './components/Contact';
-import Blog from './components/Blog';
+// import Blog from './components/Blog';
 import './styles/global.css';
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
       <Projects />
       <Awards />
       <Contact />
-      <Blog />
+      {/* <Blog /> */}
     </div>
   );
 }
