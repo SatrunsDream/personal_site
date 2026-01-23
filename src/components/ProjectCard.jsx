@@ -34,15 +34,16 @@ const ProjectCard = ({ project }) => {
             ))}
           </div>
           <div className="project-links">
-            {project.pdf ? (
+            {project.pdf && (
               <a onClick={togglePdfModal} className="project-link">
-                View Project
+                📄 View Paper
               </a>
-            ) : project.link ? (
+            )}
+            {project.link && (
               <a href={project.link} target="_blank" rel="noopener noreferrer" className="project-link">
-                View Project
+                🌐 Visit Site
               </a>
-            ) : null}
+            )}
           </div>
         </div>
       </div>

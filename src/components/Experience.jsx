@@ -6,11 +6,11 @@ const Experience = () => {
   const experiences = [
     {
       title: "Account Manager, Growth & Client Success",
-      company: "FMJ — eCommerce Optimization Platform ",
+      company: "Apptics.ai — eCommerce Optimization Platform ",
       period: "June 2025 - Sep 2025",
       location: "Miami, FL",
       bullets: [
-        "Owned onboarding and account health for 30+ DTC brands using FMJ’s subscription platform; scoped payment, funnel, retention setups and defined success metrics with stakeholders.",
+        "Owned onboarding and account health for 30+ DTC brands using Apptics.ai’s subscription platform; scoped payment, funnel, retention setups and defined success metrics with stakeholders.",
         "Ran product walkthroughs and synthesized feedback into requirements and enablement docs; partnered with growth to test new checkout/upsell flows and messaging, yielding a 15% increase in profit.",
         "Collaborated on targeted Facebook ad experiments; contributed to funnels that improved acquisition efficiency and LTV via upsell/checkout optimization by approximately 35%."
       ]

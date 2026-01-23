@@ -6,16 +6,17 @@
       "image": "/src/assets/images/hurricane-kalman.png",
       "description": "Developed a probabilistic hurricane tracking system using Kalman filtering to model storm position and velocity under observational uncertainty. Leveraged NOAA IBTrACS data to estimate storm dynamics, perform short- and multi-step forecasts, and evaluate forecast error growth over time. Compared a baseline constant-noise Kalman filter against a feature-adaptive variant, analyzing error distributions, uncertainty calibration, and inherent predictability limits in hurricane motion.",
       "pdf": "/Sequential_Bayesian_Inference_Applied_to_Hurricane_Tracking.pdf",
+      "link": "https://hurricanepaths.streamlit.app",
       "tags": ["Bayesian Inference", "Kalman Filter", "Time Series", "Probabilistic Modeling", "Geospatial Analysis", "Climate Data"]
-    },    
-    {
-      "title": "Large-Scale Ensemble Learning for U.S. Housing Prices",
-      "year": "2024",
-      "image": "/src/assets/images/hma.png",
-      "description": "Created a web application to evaluate house prices using data from over 2 million U.S. homes. Implemented regression models and geodemographic analysis for accurate price predictions.",
-      "pdf": "/House_Price_Project.pdf",
-      "tags": ["Regression", "Housing Market", "Geospatial Analysis", "FastAPI", "Data Engineering"]
     },
+    {
+      "title": "The Effect of 2 Strikes on MLB Player Performance",
+      "year": "2025",
+      "image": "/src/assets/images/mlb.png",
+      "description": "Built an interactive dashboard using D3.js and JavaScript to explore MLB player and team statistics. Visualizations include performance trends, comparisons across seasons, and predictive insights leveraging advanced metrics.",
+      "link": "https://d2osborn.github.io/dsc106-finalproject/",
+      "tags": ["Data Visualization", "D3.js", "Sports Analytics", "Interactive Dashboard"]
+    },    
     {
       "title": "Chronic Kidney Disease Prediction",
       "year": "2025",
@@ -25,12 +26,12 @@
       "tags": ["Machine Learning", "Healthcare", "Classification", "Scikit-learn", "Data Preprocessing"]
     },
     {
-      "title": "The Effect of 2 Strikes on MLB Player Performance",
-      "year": "2025",
-      "image": "/src/assets/images/mlb.png",
-      "description": "Built an interactive dashboard using D3.js and JavaScript to explore MLB player and team statistics. Visualizations include performance trends, comparisons across seasons, and predictive insights leveraging advanced metrics.",
-      "link": "https://d2osborn.github.io/dsc106-finalproject/",
-      "tags": ["Data Visualization", "D3.js", "Sports Analytics", "Interactive Dashboard"]
+      "title": "Large-Scale Ensemble Learning for U.S. Housing Prices",
+      "year": "2024",
+      "image": "/src/assets/images/hma.png",
+      "description": "Created a web application to evaluate house prices using data from over 2 million U.S. homes. Implemented regression models and geodemographic analysis for accurate price predictions.",
+      "pdf": "/House_Price_Project.pdf",
+      "tags": ["Regression", "Housing Market", "Geospatial Analysis", "FastAPI", "Data Engineering"]
     }
   ]
 }
