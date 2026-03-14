@@ -5,6 +5,7 @@
       "year": "2026",
       "image": "/src/assets/images/wildfire-intel.png",
       "description": "Analyzed over 2.4 million property records across 221k H3 spatial cells and 58 California counties to investigate data quality issues in wildfire risk datasets derived from the National Structure Inventory. Developed a spatial anomaly detection framework combining Empirical Bayes shrinkage, neighbor-pooled conditional probability models, and divergence metrics (KL, L1, Jensen–Shannon) to identify inconsistencies in county-level building attribute distributions. Built an interactive geospatial dashboard to visualize divergence patterns, spatial relationships, and reporting anomalies across landcover categories.",
+      "pdf": "/Wildfire_Property_Intelligence.pdf",
       "link": "https://wildfire-property-intelligence.vercel.app",
       "tags": [
         "Geospatial Data Science",
