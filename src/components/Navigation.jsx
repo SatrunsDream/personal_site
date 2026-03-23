@@ -2,12 +2,15 @@ import React, { useState, useEffect } from 'react';
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(true);
 
   useEffect(() => {
-    // Check for saved theme preference or default to light mode
+    // Check for saved theme preference or default to dark mode
     const savedTheme = localStorage.getItem('theme');
-    if (savedTheme === 'dark') {
+    if (savedTheme === 'light') {
+      setIsDarkMode(false);
+      document.body.classList.remove('dark-mode');
+    } else {
       setIsDarkMode(true);
       document.body.classList.add('dark-mode');
     }
