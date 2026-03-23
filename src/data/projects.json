@@ -22,6 +22,7 @@
       "year": "2026",
       "image": "/src/assets/images/eeg-bayesian.png",
       "description": "Applied Bayesian Online Change Point Detection (BOCPD) to multi-channel EEG recordings from the THINGS-EEG dataset to study nonstationarity in neural signals. Analyzed temporal variance structure, spectral bandpower, and trial-level dynamics to detect shifts in neural activity associated with cognitive and sensory processing. Built an interactive research visualization using React, TypeScript, D3, and Recharts to demonstrate run-length inference, neural variance dynamics, and change-point behavior through scroll-driven scientific storytelling.",
+      "pdf": "/BAYESIAN_NEURAL_SHIFTS.pdf",
       "link": "https://bayesian-detection-for-eeg.vercel.app",
       "tags": [
         "Bayesian Inference",
