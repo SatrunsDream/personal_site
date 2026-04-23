@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { motion } from 'framer-motion';
 import certificateImage from '../assets/images/zero_to_hero_python.jpg';
 
 const Awards = () => {
@@ -18,9 +19,23 @@ const Awards = () => {
 
   return (
     <section id="awards" className="awards">
-      <h2>Certificates</h2>
+      <motion.h2
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5 }}
+      >
+        Certificates
+      </motion.h2>
       <div className="awards-grid">
-        <div className="award-card">
+        <motion.div
+          className="award-card"
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.15 }}
+          whileHover={{ y: -6, boxShadow: '0 20px 40px rgba(59,130,246,0.2)' }}
+        >
           <div className="award-header">
             <h3>{certificate.title}</h3>
             <span className="organization">{certificate.organization}</span>
@@ -30,9 +45,9 @@ const Awards = () => {
           <button className="view-certificate-btn" onClick={toggleCertificate}>
             📜 View Certificate
           </button>
-        </div>
+        </motion.div>
       </div>
-      
+
       {showCertificate && (
         <div className="certificate-modal" onClick={toggleCertificate}>
           <div className="certificate-content" onClick={(e) => e.stopPropagation()}>
@@ -45,4 +60,4 @@ const Awards = () => {
   );
 };
 
-export default Awards; 
+export default Awards;

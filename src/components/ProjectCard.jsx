@@ -1,18 +1,8 @@
 import React, { useState } from 'react';
+import { motion } from 'framer-motion';
 
 const ProjectCard = ({ project }) => {
   const [showPdfModal, setShowPdfModal] = useState(false);
-
-  // Import images dynamically based on the project
-  const getImageSrc = (imagePath) => {
-    const imageName = imagePath.split('/').pop(); // Get filename from path
-    try {
-      return require(`../assets/images/${imageName}`);
-    } catch (error) {
-      console.error(`Image not found: ${imageName}`);
-      return null;
-    }
-  };
 
   const togglePdfModal = () => {
     setShowPdfModal(!showPdfModal);
@@ -20,11 +10,11 @@ const ProjectCard = ({ project }) => {
 
   return (
     <>
-      <div className="project-card">
-        {/* Image functionality commented out for now */}
-        {/* <div className="project-image">
-          <img src={getImageSrc(project.image)} alt={project.title} />
-        </div> */}
+      <motion.div
+        className="project-card"
+        whileHover={{ y: -6, boxShadow: '0 20px 40px rgba(59,130,246,0.2)' }}
+        transition={{ duration: 0.2 }}
+      >
         <div className="project-content">
           <h3>{project.title}</h3>
           <p>{project.description}</p>
@@ -46,14 +36,14 @@ const ProjectCard = ({ project }) => {
             )}
           </div>
         </div>
-      </div>
+      </motion.div>
 
       {showPdfModal && project.pdf && (
         <div className="certificate-modal" onClick={togglePdfModal}>
           <div className="certificate-content pdf-content" onClick={(e) => e.stopPropagation()}>
             <button className="close-btn" onClick={togglePdfModal}>×</button>
-            <iframe 
-              src={project.pdf} 
+            <iframe
+              src={project.pdf}
               title={project.title}
               className="pdf-viewer"
             />
@@ -64,4 +54,4 @@ const ProjectCard = ({ project }) => {
   );
 };
 
-export default ProjectCard; 
+export default ProjectCard;

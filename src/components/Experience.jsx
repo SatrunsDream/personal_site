@@ -1,18 +1,19 @@
 import React, { useState } from 'react';
+import { motion } from 'framer-motion';
 
 const Experience = () => {
   const [expandedItems, setExpandedItems] = useState({});
 
   const experiences = [
     {
-      title: "Account Manager, Growth & Client Success",
-      company: "Apptics.ai — eCommerce Optimization Platform ",
+      title: "Data Analyst Intern",
+      company: "Apptics.ai",
       period: "June 2025 - Sep 2025",
-      location: "Miami, FL",
+      location: "Walnut Creek, CA",
       bullets: [
-        "Owned onboarding and account health for 30+ DTC brands using Apptics.ai’s subscription platform; scoped payment, funnel, retention setups and defined success metrics with stakeholders.",
-        "Ran product walkthroughs and synthesized feedback into requirements and enablement docs; partnered with growth to test new checkout/upsell flows and messaging, yielding a 15% increase in profit.",
-        "Collaborated on targeted Facebook ad experiments; contributed to funnels that improved acquisition efficiency and LTV via upsell/checkout optimization by approximately 35%."
+        "Built a reproducible Python ETL pipeline ingesting daily paid media data from the Meta Ads API into PostgreSQL for 5 DTC brands, consolidating 1K-10K daily spend records per brand into a single source of truth that replaced fragmented manual CSV exports.",
+        "Designed an analytics-ready relational schema at the campaign/ad set/ad level and standardized 25+ marketing KPIs using SQL and Power BI, enabling consistent cross-brand performance comparisons that previously required manual reconciliation each reporting cycle.",
+        "Ran A/B tests on Meta ad creatives using Python and Tableau to surface statistically significant differences in click and conversion rates; translated findings into plain-language recommendations for non-technical marketing teams, contributing to a 35% improvement in acquisition efficiency."
       ]
     },
     {
@@ -21,10 +22,9 @@ const Experience = () => {
       period: "Sep 2024 - Dec 2024",
       location: "La Jolla, CA",
       bullets: [
-        "Contributed to the development of a Venture Capital (VC) Dashboard to assist the Department of Defense (DoD) in identifying mature and emerging service-related technologies within investor portfolios.",
-        "Applied Lean LaunchPad to interview 50+ stakeholders, map pains, and define problem statements for dual-usetech discovery; converted insights into MVP scope and backlog.",
-        "Fostered connections between military technology innovations and defense-focused venture capitalists, as well as entrepreneurs, to promote civilian-military technological advancements.",
-        "Streamlined the transition of internal R&D projects into market-ready solutions, enhancing operational efficiency and innovation within the DoD."
+        "Conducted 50+ stakeholder interviews using Lean LaunchPad methodology to surface ambiguous operational needs, then mapped findings to a prioritized product roadmap, ensuring R&D investments were tied to concrete use cases rather than theoretical capability gaps.",
+        "Designed a portfolio analytics dashboard in Excel and Power BI that mapped technology maturity signals to DoD use cases; presented to cross-functional leadership to inform multi-million dollar R&D transition decisions.",
+        "Collaborated with engineers, program managers, and procurement teams to evaluate emerging dual-use technologies and accelerate the transition of R&D projects into market-ready national security solutions."
       ]
     },
     {
@@ -33,9 +33,9 @@ const Experience = () => {
       period: "March 2022 - Sep 2024",
       location: "La Jolla, CA",
       bullets: [
-        "Redesigned 5+ client sites with responsive React/Bootstrap components, improving mobile UX and navigation clarity; delivered intake forms and basic CRM integrations.",
-        "Translated Figma wireframes into production UI; standardized components and SCSS tokens for 20% faster iteration across non-profit and SMB clients.",
-        "Spearheaded the adoption of responsive design principles and Bootstrap framework, resulting in improvement in mobile responsiveness and user experience."
+        "Built responsive React/Bootstrap UI components for 5+ nonprofit and SMB client sites, replacing static HTML layouts to improve mobile navigation clarity and reduce drop-off on key intake flows.",
+        "Translated Figma wireframes into production-ready UI using SCSS design tokens and a standardized component library, cutting per-client iteration time by ~20% across engagements by eliminating repeated style decisions.",
+        "Integrated CRM form flows and contact endpoints into client sites, enabling organizations to replace email-based intake with structured web submissions tied directly to their existing tooling."
       ]
     },
     {
@@ -44,9 +44,9 @@ const Experience = () => {
       period: "Sep 2022 - Sep 2024",
       location: "La Jolla, CA",
       bullets: [
-        "Proficiently contributed to data collection, organization, and secure storage, prioritizing data security and implementing robust backups for data integrity assurance.",
-        "Provided comprehensive support for essential biology research software applications, including proficiency in tools like PYRAT and various bioinformatics applications.",
-        "Ensured optimal performance of lab computers and software through regular updates and maintenance, facilitating efficient data analysis and research tasks."
+        "Maintained secure data pipelines for active biology research, implementing automated backup protocols and access controls to protect experiment integrity across ongoing studies.",
+        "Managed and troubleshot bioinformatics software including PYRAT, diagnosing environment and dependency issues to keep researcher analysis workflows running without disruption.",
+        "Performed routine performance tuning and OS/software updates on lab workstations, ensuring consistent uptime during high-throughput data collection and sequencing analysis periods."
       ]
     }
   ];
@@ -58,13 +58,43 @@ const Experience = () => {
     }));
   };
 
+  const isDesktop = typeof window !== 'undefined' && window.innerWidth > 768;
+
   return (
     <section id="experience" className="experience">
-      <h2>Experience</h2>
+      <motion.h2
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5 }}
+      >
+        Experience
+      </motion.h2>
       <div className="experience-timeline">
+        <motion.div
+          className="timeline-line"
+          initial={{ scaleY: 0 }}
+          whileInView={{ scaleY: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1.2, ease: 'easeInOut' }}
+          style={{ transformOrigin: 'top' }}
+        />
         {experiences.map((exp, index) => (
-          <div key={index} className={`experience-item ${index % 2 === 0 ? 'left' : 'right'}`}>
-            <div className="timeline-dot"></div>
+          <motion.div
+            key={index}
+            className={`experience-item ${index % 2 === 0 ? 'left' : 'right'}`}
+            initial={{ opacity: 0, x: isDesktop ? (index % 2 === 0 ? -50 : 50) : 0, y: isDesktop ? 0 : 30 }}
+            whileInView={{ opacity: 1, x: 0, y: 0 }}
+            viewport={{ once: true, margin: '-60px' }}
+            transition={{ duration: 0.55, delay: index * 0.1, ease: 'easeOut' }}
+          >
+            <motion.div
+              className="timeline-dot"
+              initial={{ scale: 0 }}
+              whileInView={{ scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.35, delay: index * 0.1 + 0.2, type: 'spring', stiffness: 200 }}
+            />
             <div className="experience-content">
               <div className="experience-header">
                 <h3>{exp.title}</h3>
@@ -80,7 +110,7 @@ const Experience = () => {
                     <li key={bulletIndex}>{bullet}</li>
                   ))}
                 </ul>
-                <button 
+                <button
                   className="expand-button"
                   onClick={() => toggleExpanded(index)}
                 >
@@ -88,11 +118,11 @@ const Experience = () => {
                 </button>
               </div>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </section>
   );
 };
 
-export default Experience; 
+export default Experience;

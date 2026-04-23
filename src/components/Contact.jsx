@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { motion } from 'framer-motion';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -16,15 +17,27 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission here
     console.log('Form submitted:', formData);
   };
 
   return (
     <section id="contact" className="contact">
-      <h2>Get In Touch</h2>
+      <motion.h2
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5 }}
+      >
+        Get In Touch
+      </motion.h2>
       <div className="contact-content">
-        <div className="contact-info">
+        <motion.div
+          className="contact-info"
+          initial={{ opacity: 0, x: -40 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.15 }}
+        >
           <h3>Let's Connect</h3>
           <p>I'm always interested in new opportunities, collaborations, and interesting projects. Feel free to reach out!</p>
           <div className="social-links">
@@ -38,8 +51,16 @@ const Contact = () => {
               Email
             </a>
           </div>
-        </div>
-        <form className="contact-form" onSubmit={handleSubmit}>
+        </motion.div>
+
+        <motion.form
+          className="contact-form"
+          onSubmit={handleSubmit}
+          initial={{ opacity: 0, x: 40 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.25 }}
+        >
           <div className="form-group">
             <label htmlFor="name">Name</label>
             <input
@@ -73,10 +94,10 @@ const Contact = () => {
             ></textarea>
           </div>
           <button type="submit" className="submit-btn">Send Message</button>
-        </form>
+        </motion.form>
       </div>
     </section>
   );
 };
 
-export default Contact; 
+export default Contact;

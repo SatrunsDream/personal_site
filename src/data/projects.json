@@ -2,6 +2,24 @@
   
   "projects": [
     {
+      "title": "Bayesian Transit Equity: Spatial Accessibility Modeling",
+      "year": "2026",
+      "image": "/src/assets/images/bayes-transit-equity.png",
+      "description": "Fit a BYM2 Bayesian spatial hierarchical model (ICAR partial pooling, Student-t likelihood, PC priors) in PyMC across 726 San Diego census tracts to produce full posterior distributions of transit accessibility. Processed GTFS schedule data and computed multi-destination accessibility via r5py pedestrian routing on a 337k-node OSM network. Posterior exceedance analysis uncovered a density confound invisible to deterministic methods (Spearman ρ = +0.47, p = 8×10⁻⁴¹) and an intervention simulation showed Bayesian targeting produced 50% more threshold crossings than point-estimate prioritization. Deployed an interactive Next.js dashboard with Deck.gl choropleth, per-tract posterior KDE plots, and live scenario comparison mode.",
+      "pdf": "",
+      "link": "https://bayes-transit-equity.vercel.app",
+      "tags": [
+        "Bayesian Hierarchical Modeling",
+        "Spatial Statistics",
+        "MCMC",
+        "PyMC",
+        "Geospatial Data Science",
+        "Transportation Equity",
+        "Next.js",
+        "Deck.gl"
+      ]
+    },
+    {
       "title": "GeoCrop: Spatiotemporal Agricultural Resilience Modeling",
       "year": "2026",
       "image": "/src/assets/images/geocrop-modeling.png",
